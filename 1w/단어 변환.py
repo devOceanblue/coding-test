@@ -1,5 +1,5 @@
 def solution(begin, target, words):
-    min_path = float('inf')
+    min_path = float("inf")
 
     def find_next_nodes(node, visited):
         next_nodes = []
@@ -25,10 +25,12 @@ def solution(begin, target, words):
 
     visited = set()
     dfs(begin, 1, visited)
-    if min_path == float('inf'):
+    if min_path == float("inf"):
         min_path = 0
     return min_path
 
 
-if __name__ == '__main__':
-    print(solution(begin="hit", target="cog", words=["hot", "dot", "dog", "lot", "log"]))
+if __name__ == "__main__":
+    print(
+        solution(begin="hit", target="cog", words=["hot", "dot", "dog", "lot", "log"])
+    )
